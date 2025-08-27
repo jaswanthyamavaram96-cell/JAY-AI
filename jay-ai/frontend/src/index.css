@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+	:root {
+		--bg: 10 11 16;
+		--fg: 230 233 239;
+		--muted: 161 166 180;
+		--primary: 124 92 255;
+		--primary2: 25 227 255;
+	}
+	html { color-scheme: dark; }
+	body { @apply bg-[rgb(var(--bg))] text-[rgb(var(--fg))] antialiased; }
+	a { @apply text-sky-400 hover:text-sky-300; }
+}
+
+@layer utilities {
+	.container { @apply max-w-6xl w-[92%] mx-auto; }
+}
