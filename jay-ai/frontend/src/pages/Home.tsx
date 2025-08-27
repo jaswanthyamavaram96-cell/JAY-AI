@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { EngineersDayBanner } from '../components/EngineersDayBanner'
 
 export function Home() {
 	return (
@@ -14,6 +15,7 @@ export function Home() {
 						<Link to="/signup" className="px-5 py-3 rounded-xl bg-gradient-to-tr from-violet-500 to-cyan-400 text-black font-semibold">Try Jay AI Now</Link>
 						<Link to="/features" className="px-5 py-3 rounded-xl border border-white/15">Explore Features</Link>
 					</div>
+					<div className="mt-6"><EngineersDayBanner /></div>
 				</div>
 			</section>
 
