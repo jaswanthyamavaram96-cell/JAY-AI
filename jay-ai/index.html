@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jay AI – The AI That Does It All</title>
+	<meta name="description" content="Jay AI is a next-generation super AI assistant for search, image, video, music, coding, reports, and more." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+	<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a class="logo" href="#">Jay<span>AI</span></a>
+			<nav class="primary-nav" aria-label="Primary">
+				<a href="#features">Features</a>
+				<a href="#showcase">Showcase</a>
+				<a href="#engineers-day">Engineer’s Day</a>
+				<a href="#why">Why Jay AI?</a>
+				<a href="#testimonials">Testimonials</a>
+			</nav>
+			<div class="nav-cta">
+				<button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+					<span class="icon">☾</span>
+				</button>
+				<a class="btn primary" href="#cta">Try Jay AI Now</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="hero" class="section hero" aria-label="Hero">
+			<canvas id="particles" aria-hidden="true"></canvas>
+			<div class="container hero-content">
+				<h1 class="headline">Meet Jay AI – The AI That Does It All</h1>
+				<p class="subheadline">Smarter answers. Stunning images. Cinematic videos. Beautiful songs. One assistant, endless possibilities.</p>
+				<div class="cta-row">
+					<a class="btn primary big" href="#cta">Try Jay AI Now</a>
+					<a class="btn ghost big" href="#features">Explore Features</a>
+				</div>
+			</div>
+			<div class="hero-glow" aria-hidden="true"></div>
+		</section>
+
+		<section id="features" class="section features" aria-label="Features">
+			<div class="container">
+				<h2 class="section-title">Superpowers, unified</h2>
+				<p class="section-subtitle">Jay AI combines search intelligence with creative generation across text, images, video, music, and code.</p>
+				<div class="feature-grid">
+					<article class="feature-card reveal">
+						<div class="icon neon">🔎</div>
+						<h3>Search Genius</h3>
+						<p>Finds answers by combining Google, ChatGPT, Gemini, Claude, Perplexity, and more.</p>
+					</article>
+					<article class="feature-card reveal">
+						<div class="icon neon">🖼️</div>
+						<h3>Text‑to‑Image Generator</h3>
+						<p>Creates better images than any AI tool with cinematic lighting and detail.</p>
+					</article>
+					<article class="feature-card reveal">
+						<div class="icon neon">🎬</div>
+						<h3>Text‑to‑Video Generator</h3>
+						<p>Makes high‑quality cinematic videos from prompts in seconds.</p>
+					</article>
+					<article class="feature-card reveal">
+						<div class="icon neon">🎵</div>
+						<h3>AI Song Maker</h3>
+						<p>Generates songs with lyrics, music, and vocals tailored to your style.</p>
+					</article>
+					<article class="feature-card reveal">
+						<div class="icon neon">🗣️</div>
+						<h3>Voice + Multilingual Chat</h3>
+						<p>Talk to Jay AI in any language with natural, expressive voices.</p>
+					</article>
+					<article class="feature-card reveal">
+						<div class="icon neon">🛠️</div>
+						<h3>Student & Engineer Tools</h3>
+						<p>Report maker, quiz generator, coding helper, resume builder, and more.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="showcase" class="section showcase" aria-label="Showcase">
+			<div class="container">
+				<h2 class="section-title">See Jay AI in action</h2>
+				<div class="showcase-grid">
+					<div class="demo-card reveal">
+						<h3>Ask anything</h3>
+						<div class="qa">
+							<input id="qaInput" type="text" placeholder="Why is the sky blue?" aria-label="Ask Jay AI" />
+							<button id="qaAsk" class="btn primary">Ask</button>
+						</div>
+						<div id="qaAnswer" class="answer" aria-live="polite"></div>
+					</div>
+					<div class="demo-card reveal">
+						<h3>Image preview</h3>
+						<div class="media mock-image" role="img" aria-label="AI generated image preview"></div>
+					</div>
+					<div class="demo-card reveal">
+						<h3>Video preview</h3>
+						<div class="media mock-video" role="img" aria-label="AI generated video preview"></div>
+					</div>
+					<div class="demo-card reveal">
+						<h3>Music sample</h3>
+						<audio id="musicSample" controls preload="none">
+							<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_28b54056c6.mp3?filename=lofi-study-112191.mp3" type="audio/mpeg" />
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="engineers-day" class="section engineers" aria-label="Engineer’s Day">
+			<div class="container">
+				<h2 class="section-title">Engineer’s Day Special</h2>
+				<p class="section-subtitle">Celebrating the spirit of innovation on Engineer’s Day with Jay AI.</p>
+				<div class="engineers-grid">
+					<div class="demo-card reveal">
+						<h3>AI Tribute</h3>
+						<video class="tribute-video" autoplay loop muted playsinline>
+							<source src="https://cdn.coverr.co/videos/coverr-circuit-board-technology-3478/1080p.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<div class="demo-card reveal">
+						<h3>Engineer’s Quiz</h3>
+						<p>How well do you know engineering milestones? Take a quick quiz with Jay AI.</p>
+						<button id="playQuiz" class="btn primary">Play Engineer’s Quiz with Jay AI</button>
+						<div id="quizArea" class="quiz" hidden>
+							<div class="quiz-q" id="quizQuestion"></div>
+							<div class="quiz-a" id="quizAnswers"></div>
+							<div class="quiz-r" id="quizResult"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="why" class="section why" aria-label="Why Jay AI">
+			<div class="container">
+				<h2 class="section-title">Why Jay AI?</h2>
+				<p class="section-subtitle">Unlike other AI tools, Jay AI searches across all sources and gives the most reliable, accurate, and creative output.</p>
+				<div class="compare">
+					<div class="compare-col">
+						<h3>Jay AI</h3>
+						<ul>
+							<li>Aggregated search + reasoning across engines</li>
+							<li>Best‑in‑class generation for image, video, and music</li>
+							<li>Voice, multilingual chat, and coding tools</li>
+							<li>Trustworthy, cited answers</li>
+						</ul>
+					</div>
+					<div class="compare-col dim">
+						<h3>Other AI tools</h3>
+						<ul>
+							<li>Single‑source answers</li>
+							<li>Limited creative quality</li>
+							<li>Few productivity tools bundled</li>
+							<li>No citations or verification</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="section testimonials" aria-label="Testimonials">
+			<div class="container">
+				<h2 class="section-title">Loved by creators, students, and engineers</h2>
+				<div class="testimonials-grid">
+					<blockquote class="quote reveal">“Jay AI helped me create a project report in minutes.”<cite>— Aanya, Student</cite></blockquote>
+					<blockquote class="quote reveal">“The AI‑generated video quality is unmatched.”<cite>— Rishi, Filmmaker</cite></blockquote>
+					<blockquote class="quote reveal">“My coding workflow is twice as fast with Jay AI.”<cite>— Meera, Engineer</cite></blockquote>
+				</div>
+			</div>
+		</section>
+
+		<section id="cta" class="section cta" aria-label="Call to action">
+			<div class="container">
+				<h2 class="cta-title">Your AI. Smarter. Faster. Better.</h2>
+				<div class="cta-actions">
+					<a class="btn primary big" href="#" aria-label="Sign up free">Sign Up Free</a>
+					<a class="btn ghost big" href="#" aria-label="Explore Jay AI">Explore Jay AI</a>
+				</div>
+				<div class="social">
+					<a href="#" aria-label="Twitter">Twitter</a>
+					<a href="#" aria-label="LinkedIn">LinkedIn</a>
+					<a href="#" aria-label="Contact">Contact</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© <span id="year"></span> Jay AI. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="./script.js"></script>
+</body>
+</html>
